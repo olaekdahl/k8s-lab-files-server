@@ -1,13 +1,13 @@
 # Instructions
 ## 99.9% Chat GPT generated code
 
-kubectl label nodes `<control plane>` labfiles="true"  
-mkdir ~/labfiles  
-Copy your files to ~/labfiles  
-git clone https://github.com/olaekdahl/k8s-lab-files-server.git on your lab server.  
-cd k8s-lab-files-server/  
-kubectl apply -f pv.yaml,pvc.yaml,deployment.yaml  
-kubectl expose deployment labfiles-server --type=NodePort  
-kubectl get svc  
-curl ifconfig.io  
-http://`<ip address>:<port number>`/files  
+1. kubectl label nodes `<control plane>` labfiles="true"
+2. mkdir ~/labfiles
+3. Copy your files to ~/labfiles
+4. git clone https://github.com/olaekdahl/k8s-lab-files-server.git on your lab server.
+5. cd k8s-lab-files-server/
+6. kubectl apply -f pv.yaml,pvc.yaml,deployment.yaml
+7. kubectl expose deployment labfiles-server --type=NodePort
+8. kubectl get svc to get port number
+10. curl ifconfig.io to get public ip address
+11. http://`<ip address>:<port number>`/files
