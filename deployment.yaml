@@ -16,7 +16,7 @@ spec:
         labfiles: "true"
       containers:
         - name: myapp-container
-          image: olaekdahl/labfiles-server:1.0
+          image: olaekdahl/labfiles-server:1.1
           ports:
             - containerPort: 3000
           volumeMounts:
