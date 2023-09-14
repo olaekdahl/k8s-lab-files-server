@@ -12,6 +12,8 @@ spec:
       labels:
         app: labfiles-server
     spec:
+      nodeSelector:
+        labfiles: "true"
       containers:
         - name: myapp-container
           image: olaekdahl/labfiles-server:1.0
