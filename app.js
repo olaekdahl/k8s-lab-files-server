@@ -7,7 +7,7 @@ const port = 3000; // You can choose any port you like
 
 const folderPath = '/data/myapp'; // Replace with the path to your mounted folder
 
-app.get('/files', (req, res) => {
+app.get('/', (req, res) => {
   fs.readdir(folderPath, (err, files) => {
     if (err) {
       console.error('Error reading directory:', err);
@@ -22,7 +22,7 @@ app.get('/files', (req, res) => {
         <!DOCTYPE html>
         <html>
           <head>
-            <title>100% Created With Chat GPT</title>
+            <title>99.9% Created With Chat GPT</title>
           </head>
           <body>
             <h1>Files in the Directory:</h1>

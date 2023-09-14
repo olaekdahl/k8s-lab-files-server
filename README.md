@@ -9,5 +9,5 @@
 6. kubectl apply -f pv.yaml,pvc.yaml,deployment.yaml
 7. kubectl expose deployment labfiles-server --type=NodePort
 8. kubectl get svc to get port number
-10. curl ifconfig.io to get public ip address
-11. http://`<ip address>:<port number>`/files
+9. curl ifconfig.io to get public ip address
+10. http://`<ip address>:<port number>`/
