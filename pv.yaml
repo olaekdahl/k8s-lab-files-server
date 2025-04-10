@@ -9,5 +9,5 @@ spec:
   accessModes:
     - ReadWriteOnce
   hostPath:
-    path: /home/ubuntu/labfiles  # Specify the path on the host node
+    path: /home/student/labfiles  # Specify the path on the host node
   persistentVolumeReclaimPolicy: Retain
