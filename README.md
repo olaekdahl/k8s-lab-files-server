@@ -5,7 +5,7 @@
 5. cd k8s-lab-files-server/
 6. kubectl apply -f pv.yaml,pvc.yaml,deployment.yaml
     * Check folder location in `pv.yaml`. It's `/home/student/labfiles` by default
-8. kubectl expose deployment labfiles-server --type=NodePort
-9. kubectl get svc to get port number
-10. curl ifconfig.io to get public ip address
+8. `kubectl expose deployment labfiles-server --type=NodePort`
+9. `kubectl get svc` to get port number
+10. `curl ifconfig.io` to get public ip address
 11. http://`<ip address>:<port number>`/
